@@ -1,0 +1,38 @@
+.loading-cont{
+    width: 100%;
+    margin-top: 50px;
+    /* padding: auto; */
+    display: flex;
+    justify-content: center;
+}
+
+.loading{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    background-image: conic-gradient(transparent 90deg, #4e89ff);
+    animation-name: loading;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.center{
+    width: 70px;
+    height: 70px;
+    border-radius: 60px;
+    background-color: #F2F4F5;
+}
+
+@keyframes loading {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
